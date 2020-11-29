@@ -21,12 +21,8 @@ namespace _03._SoftUni_Bar_Income
             {
                 
                 Match currentShift = regex.Match(input);
-                if (currentShift.Groups[1].Captures.Count > 0 &&
-                    currentShift.Groups[2].Captures.Count > 0 &&
-                    currentShift.Groups[3].Captures.Count > 0 &&
-                    currentShift.Groups[4].Captures.Count > 0)
+                if (currentShift.Success)
                 {
-
                     string name = currentShift.Groups[1].Value;
                     int count = int.Parse(currentShift.Groups[3].Value);
                     string product = currentShift.Groups[2].Value;
