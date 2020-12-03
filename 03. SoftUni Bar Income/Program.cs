@@ -38,7 +38,7 @@ namespace _03._SoftUni_Bar_Income
             {
                 Console.WriteLine(string.Join(Environment.NewLine, bar));
                 Console.WriteLine($"Total income: {totalPrice:f2}");
-            }
+            } 
 
         }
     }
